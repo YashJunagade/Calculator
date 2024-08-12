@@ -12,7 +12,8 @@ A simple calculator built using React.js that performs basic arithmetic operatio
 
 - ## Live Demo
 
-You can view the live project here: [Markdown Previewer](https://main--markdownpreviewer-yashjunagade.netlify.app/)
+You can view the live project here: [Calculator](https://main--calculator-yashjunagade.netlify.app/)
+
 
 ## Getting Started
 
