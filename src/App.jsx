@@ -81,54 +81,57 @@ const Calculator = () => {
   ];
 
   return (
-    <div className="calculator">
-      <div id="display">{display}</div>
-      {buttons.map((btn) => (
-        <button
-          key={btn}
-          id={
-            btn === "clear"
-              ? "clear"
-              : btn === "="
-              ? "equals"
-              : btn === "0"
-              ? "zero"
-              : btn === "1"
-              ? "one"
-              : btn === "2"
-              ? "two"
-              : btn === "3"
-              ? "three"
-              : btn === "4"
-              ? "four"
-              : btn === "5"
-              ? "five"
-              : btn === "6"
-              ? "six"
-              : btn === "7"
-              ? "seven"
-              : btn === "8"
-              ? "eight"
-              : btn === "9"
-              ? "nine"
-              : btn === "+"
-              ? "add"
-              : btn === "-"
-              ? "subtract"
-              : btn === "*"
-              ? "multiply"
-              : btn === "/"
-              ? "divide"
-              : btn === "."
-              ? "decimal"
-              : ""
-          }
-          onClick={() => handleInput(btn)}
-        >
-          {btn === "*" ? "×" : btn === "clear" ? "AC" : btn}
-        </button>
-      ))}
-    </div>
+    <>
+      <div className="calculator">
+        <div id="display">{display}</div>
+        {buttons.map((btn) => (
+          <button
+            key={btn}
+            id={
+              btn === "clear"
+                ? "clear"
+                : btn === "="
+                ? "equals"
+                : btn === "0"
+                ? "zero"
+                : btn === "1"
+                ? "one"
+                : btn === "2"
+                ? "two"
+                : btn === "3"
+                ? "three"
+                : btn === "4"
+                ? "four"
+                : btn === "5"
+                ? "five"
+                : btn === "6"
+                ? "six"
+                : btn === "7"
+                ? "seven"
+                : btn === "8"
+                ? "eight"
+                : btn === "9"
+                ? "nine"
+                : btn === "+"
+                ? "add"
+                : btn === "-"
+                ? "subtract"
+                : btn === "*"
+                ? "multiply"
+                : btn === "/"
+                ? "divide"
+                : btn === "."
+                ? "decimal"
+                : ""
+            }
+            onClick={() => handleInput(btn)}
+          >
+            {btn === "*" ? "×" : btn === "clear" ? "AC" : btn}
+          </button>
+        ))}
+      </div>
+      <p className="myName">Made by ❤️ Yash Junagade</p>
+    </>
   );
 };
 

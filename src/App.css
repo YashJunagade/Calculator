@@ -52,3 +52,9 @@ button:hover {
 #equals {
   grid-row: span 2;
 }
+
+.myName {
+  .myName {
+    text-align: center;
+  }
+}
